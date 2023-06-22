@@ -68,18 +68,32 @@ button{
 
 /* Base styles*/
 .section{
-    padding-bottom: 72px;
+    padding-bottom: 120px;
 }
 
 .container{
     width: 1158px;
 }
 
+
+
 /*Header styles*/
 header{
     background-color: var(--drand-white-color);
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
 }
 
 .logo{
@@ -90,10 +104,17 @@ header{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-web-color);
+    margin-right: 76px;
 }
 
 .logo-studio{
     color: var(--logo-studio-color);
+}
+
+.header-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .nav-list{
@@ -107,8 +128,14 @@ header{
     font-family: inherit;
     font-style: normal;
     color: var(--brand-color);
+    
 }
 
+.header-adress{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 .address-link{
 
 }
@@ -133,8 +160,8 @@ header{
 }
 
 .section-one{
-    padding-bottom: 72px;
-    padding-top: 72px;
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
     
 
@@ -146,6 +173,11 @@ header{
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--drand-white-color);
+    display: flex;
+    width: 496px;
+    flex-direction: column;
+    flex-shrink: 0;
+    
 }
 
 .button-title{
@@ -155,6 +187,17 @@ header{
     letter-spacing: 0.04em;
     font-weight: 500;
     line-height: 1.5;
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 48px;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    background: var(--brand-iris-color, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .button-title:hover,
