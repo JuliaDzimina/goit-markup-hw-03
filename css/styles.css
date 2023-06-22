@@ -11,6 +11,12 @@
 
 }
 
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
 /* Common styles*/
 
 body{
@@ -25,10 +31,27 @@ body{
 }
 
 /*Reset*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+
 .list,
 ul,
 ol{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .link,
@@ -44,10 +67,19 @@ button{
 }
 
 /* Base styles*/
+.section{
+    padding-bottom: 72px;
+}
+
+.container{
+    width: 1158px;
+}
 
 /*Header styles*/
 header{
     background-color: var(--drand-white-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logo{
@@ -94,9 +126,18 @@ header{
 
 
 /*main*/
-.hero-imege{
+.hero{
     background-color: var(--secondry-brand-color);
+    padding-top: 188px;
+    padding-bottom: 292px;
 }
+
+.section-one{
+    padding-bottom: 72px;
+    padding-top: 72px;
+}
+    
+
 
 .main-title{
     font-weight: 700;
@@ -153,6 +194,8 @@ header{
 
 .footer{
     background-color: var(--secondry-brand-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-studio-footer{
@@ -181,4 +224,13 @@ header{
 
 .gallery-list{
     background-color: var(--drand-white-color);
+}
+
+.gallery-portfolio{
+    padding-bottom: 120px;
+}
+
+.meny-portfolio{
+    padding-top: 96px;
+    padding-bottom: 72px;
 }
