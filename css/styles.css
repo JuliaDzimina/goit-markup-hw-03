@@ -69,6 +69,20 @@ button{
     cursor: pointer;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 /* Base styles*/
 .section{
     padding-bottom: 120px;
@@ -102,7 +116,7 @@ header{
 }
 
 .header-border{
-    border-bottom: 1px solid var(--cornflower);
+    border-bottom: 1px solid var(--cornflowe);
 }
 
 .header-container{
@@ -240,6 +254,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .description-list{
@@ -258,6 +273,10 @@ header{
     text-align: center;
     text-transform: capitalize;
     color: var(--secondry-brand-color);
+}
+
+.section-one-title{
+    margin-bottom: 8px;
 }
 
 .work-title{
