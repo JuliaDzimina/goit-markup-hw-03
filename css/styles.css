@@ -99,7 +99,8 @@ button{
 .card-set{
     display: flex;
     flex-wrap: wrap;
-    gap: var(--indent);
+    column-gap: var(--indent);
+    row-gap: 48px;
 }
 
 .card-set-item{
@@ -296,16 +297,17 @@ header{
 
 .section-team{
     background-color: var(--cloud-color);
+    padding: 120px 0;
 }
 
 
 .team-list{
     background-color: var(--drand-white-color);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-title{
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px; 
 }
 
 .team{
@@ -314,22 +316,30 @@ header{
 
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 24px;
 }
 
 .team-border{
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
     display: flex;
     width: 264px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
     border-radius: 0px 0px 4px 4px;
     background: var(--white, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
+.paragraph-team{
+    text-align: center;
+}
+
+.name-team{
+    text-align: center;
+    margin-bottom: 8px;
+}
+
 .footer{
     background-color: var(--secondry-brand-color);
     padding-top: 100px;
@@ -370,6 +380,13 @@ header{
 .button-portfolio:focus{
     background-color: var(--hover-focus-color);
     color: var(--drand-white-color);
+    border: 1px solid transparent;
+
+}
+
+.section-portfolio{
+    padding-top: 96px; 
+    padding-bottom: 120px;
 }
 
 .gallery-list{
@@ -382,17 +399,17 @@ header{
 
 .meny-portfolio{
     padding-top: 96px;
-    padding-bottom: 72px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 48px;
+    gap: 24px;
+    margin-bottom: 72px
 }
 
 .border-portfolio{
     display: flex;
     width: 360px;
-    padding: 32px 0px 32px 16px;
+    padding: 32px 16px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
@@ -403,3 +420,6 @@ header{
     background: var(--drand-white-color, #FFF);
 }
 
+.title-gallery{
+    margin-bottom: 8px 
+}
