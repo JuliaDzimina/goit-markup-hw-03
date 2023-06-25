@@ -111,8 +111,6 @@ button{
 
 header{
     background-color: var(--drand-white-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .header-border{
@@ -158,6 +156,7 @@ header{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondry-brand-color);
+    padding: 24px 0;
 }
 
 .address{
@@ -282,12 +281,17 @@ header{
 }
 
 .work-title{
-    padding-bottom: 72px;
+   /* padding-bottom: 72px;*/
+   margin-bottom: 72px;
 }
 
 .work-list{
     display: flex;
     gap: 24px;
+}
+
+.work-image{
+    width: calc((100% - 48px) / 3);
 }
 
 .section-team{
@@ -332,6 +336,11 @@ header{
     padding-bottom: 100px;
 }
 
+.footer-link{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .logo-studio-footer{
     color: var(--cloud-color);
 }
@@ -339,7 +348,6 @@ header{
 .paragraph-footer{
     color: var(--cloud-color);
     width: 264px;
-    padding-top: 16px;
 }
 
 .button-portfolio{
