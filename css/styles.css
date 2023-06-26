@@ -87,7 +87,7 @@ button{
 .section{
     padding-bottom: 120px;
 }
-
+ 
 .container{
     width: 1158px;
     margin-left: auto;
@@ -196,7 +196,7 @@ header{
 }
 
 .section-one{
-   padding-top: 120px;
+    padding-top: 120px;
 }
     
 
@@ -393,12 +393,9 @@ header{
     background-color: var(--drand-white-color);
 }
 
-.gallery-portfolio{
-    padding-bottom: 120px;
-}
 
 .meny-portfolio{
-    padding-top: 96px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
